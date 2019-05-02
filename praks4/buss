@@ -1,0 +1,13 @@
+#!/bin/bash
+#skripti algus
+echo -n "Mitu inimest on teie grupis?: "
+read inimesed #küsib inimeste arvu
+
+echo -n "Mitu kohta on ühes bussis?: "
+read kohad  #Küsib kohtasid
+
+bussid=`expr $inimesed / $kohad` #arvutab kahte sisendit
+ylejaanud=`expr $inimesed % $kohad` 
+
+echo "Kokku on vaja $bussid bussi ja kui see number $ylejaanud ei ole 0, siis lisaks vaja ühte bussi juurde. "
+#skripti lõpp
