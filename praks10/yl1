@@ -1,0 +1,22 @@
+#!/bin/bash
+#skripti algus
+echo -n "Sisesta oma vanus: "
+read vanus
+
+if test $vanus -gt 0 -a $vanus -lt 11
+then
+echo "Oled laps"
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+echo "Oled nooremat sorti vend"
+elif test $vanus -ge 18 -a $vanus -lt 64
+then
+echo "Tere tulemast täiskasvanute sekka!"
+elif test $vanus -ge 64 -a $vanus -lt 117
+then
+echo "Oled päris vana"
+elif test $vanus -ge 118
+then "Oled kõige vanem inimene aga valetad niikuinii"
+else
+echo "Vigane sisend"
+fi
