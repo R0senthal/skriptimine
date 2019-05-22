@@ -1,0 +1,23 @@
+#!/bin/bash
+#skripti algus
+echo "Mitu tärni tahate?"
+read t
+for (( i = l; i <= 5; i++ ))
+do
+if (( $i == l || $i == 5))
+then
+echo -n $i". "
+	for (( j = l; j <= $t; j++ ))
+	do
+		echo -n "*"
+	done
+	echo ""
+else echo -n $i". "
+echo -n "*"
+	for (( q = 2; q <= 4; q++ ))
+	do
+	echo -n " "
+	done
+echo "*"
+fi
+done
