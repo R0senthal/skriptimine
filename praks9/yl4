@@ -1,0 +1,14 @@
+#!/bin/bash
+#skripti algus
+echo "Mitu rida on vaja? "
+read r
+for (( i = l; i <= $r; i++ ))
+do
+echo -n $i". "
+for (( j = l; j <= $i; j++ ))
+do
+echo -n "*"
+done
+echo ""
+done
+#skripti lõpp
