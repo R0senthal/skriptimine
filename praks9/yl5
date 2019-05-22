@@ -1,0 +1,19 @@
+#!/bin/bash
+#skripti algus
+echo "Sisesta ridade arv: "
+read r
+var1=$r
+var2=$r
+for (( i = l; i <= $r; i++ ))
+	do
+	echo -n $i". "
+		for (( j = 1; j <= $r-i; j++ ))
+		do
+			echo -n "o"
+		done
+			for (( k = l; k <=i; k++ ))
+			do
+				echo -n "*"
+			done
+	echo ""
+done
